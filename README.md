@@ -1,4 +1,5 @@
 # Jekyll Tipue Search
+This is a branch of [Jekyll Tipue Search](https://github.com/jekylltools/jekyll-tipue-search) by [jekylltools] (https://github.com/jekylltools).
 
 Full-text search in Jekyll with [Tipue Search](https://github.com/Tipue/Tipue-Search). No plugin necessary. Fully compatible with Github Pages.
 

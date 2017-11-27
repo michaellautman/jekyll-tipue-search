@@ -10,16 +10,15 @@ View a [live demo running on Github Pages](https://jekylltools.github.io/jekyll-
 
 1. Add the `assets/tipuesearch` folder and all contents to your site.
 
-2. Add the Tipue Search scripts & styles to your theme head. Some of these lines are [optional, see the docs for info](http://www.tipue.com/search/docs/?d=1):
+2. Add the Tipue Search scripts & styles to your theme head. This code assumes that you are already loading jQuery on your site.  Some of these lines are [optional, see the docs for info](http://www.tipue.com/search/docs/?d=1): 
 
   ```
   {% if page.tipue_search_active or layout.tipue_search_active %}
   <link rel="stylesheet" href="{{ "/assets/tipuesearch/css/normalize.css" | relative_url }}">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="{{ "/assets/tipuesearch/tipuesearch_content.js" | relative_url }}"></script>
+   <script async src="{{ "/assets/tipuesearch/tipuesearch_content.js" | relative_url }}"></script>
   <link rel="stylesheet" href="{{ "/assets/tipuesearch/css/tipuesearch.css" | relative_url }}">
-  <script src="{{ "/assets/tipuesearch/tipuesearch_set.js" | relative_url }}"></script>
-  <script src="{{ "/assets/tipuesearch/tipuesearch.min.js" | relative_url }}"></script>
+  <script async src="{{ "/assets/tipuesearch/tipuesearch_set.js" | relative_url }}"></script>
+  <script async src="{{ "/assets/tipuesearch/tipuesearch.min.js" | relative_url }}"></script>
   {% endif %}
   ```
 
